@@ -42,13 +42,13 @@ using namespace std;
 ll visited[1000000];
 vi edge[1000001];
 
-void dfs(ll i)
+void dfs(ll node)
 {
-    visited[i]=1;
+    visited[node]=1;
 
-    cout<<i<<" ";
+    cout<<node<<" ";
 
-    for(ll child:edge[i])
+    for(ll child:edge[node])
     {
         if(visited[child]==0)
         {
